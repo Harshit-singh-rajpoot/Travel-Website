@@ -1,0 +1,23 @@
+.main{
+    border : 2px solid black;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: lightslategray;
+    
+}
+.bodymain{
+    height:95vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./img/login.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.btnclass button:hover{
+background-color: rebeccapurple;
+padding: 1%;
+}
+.main input:hover{
+    padding:1%
+}

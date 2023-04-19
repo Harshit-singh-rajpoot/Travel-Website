@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./logwin.css">
+    <title>Login Window</title>
+</head>
+<body>
+    <div class="container">
+        <div class="formbox">
+            <h1 id="title">Sign Up</h1>
+            <form action="">
+                <div class="input-group">
+                    <div class="input-field" id="namefield">
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div class="input-field">
+                        <input type="E-mail" placeholder="E-mail">
+                    </div>
+                    <div class="input-field">
+                        <input type="password" placeholder="Password">
+                    </div>
+                        <p>Lost Password <a href="#">Click Here</a></p>
+                </div>
+                <div class="btnfield">
+                    <button type="button" id="signupbtn">Sign Up</button>
+                    <button type="button" class="disable" id="signinbtn">Sign In</button>
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script>
+        let signupbtn =document.getElementById("signupbtn");
+        let signinbtn =document.getElementById("signinbtn");
+        let namefield =document.getElementById("namefield");
+        let title =document.getElementById("title");
+
+        signinbtn.onclick= function(){
+            namefield.style.maxHeight="0";
+            title.innerhtml="Sign In";
+            signupbtn.classList.add("disable");
+            signinbtn.classList.remove("disable");
+        }
+        signupbtn.onclick= function(){
+            namefield.style.maxHeight="60px";
+            title.innerhtml="Sign Up";
+            signupbtn.classList.remove("disable");
+            signinbtn.classList.add("disable");
+        }
+        
+    </script>
+</body>
+</html>
